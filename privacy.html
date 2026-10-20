@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy · Feed the Lily</title>
+<title>Privacy Policy · Rillroot</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Feed the Lily (app ID <code>com.dangasama.garden</code>) · Effective 9 October 2026</p>
+<p class="meta">Rillroot (app ID <code>com.dangasama.garden</code>) · Effective 20 October 2026</p>
 
-<p>This policy explains what data the mobile game <strong>Feed the Lily</strong> (“the game”) uses, why, and the choices you have. The game is a puzzle game for Android and iOS. You can play it without creating an account.</p>
+<p>This policy explains what data the mobile game <strong>Rillroot</strong> (“the game”) uses, why, and the choices you have. The game is a puzzle game for Android and iOS. You can play it without creating an account; signing in with Google, to keep your progress in the cloud, is optional.</p>
 
 <h2>Who is responsible</h2>
 <p>The data controller is <strong>Luis-Fernando Scripcaru</strong>, Romania. Contact: <a href="mailto:hello@luisscripcaru.com">hello@luisscripcaru.com</a>.</p>
 
-<h2>Data kept only on your device</h2>
-<p>Your progress (levels, stars, streak, coins, power-ups), your settings (language, sound, vibration, the daily reminder time) and the downloaded levels are stored on your phone. They are not sent to us. Uninstalling the game deletes them.</p>
+<h2>Data kept on your device</h2>
+<p>Your settings (language, sound, vibration, the daily reminder time) and the downloaded levels are stored only on your phone. Your progress (levels, streak, coins, power-ups, daily race history, your player name and avatar) is stored on your phone too, and is copied to the cloud only if you sign in with Google (see below). Uninstalling the game deletes what is on the phone.</p>
 <p>The <strong>daily reminder</strong> is optional and off by default. It is a notification scheduled on your phone; no data is sent anywhere to show it.</p>
 
 <h2>Data processed by service providers</h2>
@@ -26,6 +26,18 @@
 <h3>Level downloads and app protection: Google Firebase</h3>
 <p>New levels and the daily puzzle are downloaded from Google Cloud Firestore. To deliver them, Google processes technical data such as your IP address and device type. Firebase App Check (with Google Play Integrity on Android and Apple App Attest on iOS) verifies that requests come from the real game. Firebase Remote Config delivers game settings (for example prices in coins) and uses an installation identifier.</p>
 <p><em>Legal basis:</em> our legitimate interest in delivering the game's content and protecting it from abuse (GDPR Art. 6(1)(f)).</p>
+
+<h3>Player ID: Firebase Authentication</h3>
+<p>On first launch the game creates an anonymous player account with Google Firebase Authentication: a random identifier, with no name or email attached. It lets the leaderboards know which entry is yours and stops others from changing it. Firebase processes technical data such as your IP address to provide this.</p>
+<p><em>Legal basis:</em> performing the service you use (GDPR Art. 6(1)(b)) and our legitimate interest in protecting the leaderboards from abuse (Art. 6(1)(f)).</p>
+
+<h3>Leaderboards: the daily board and the daily race</h3>
+<p>Once you reach the leaderboards (after the first levels), the game shows you on them under a player name and an avatar. The name is made up for you (a garden name such as “Mossy Fern”) and you can change it; please don't use your real name. Stored in Google Cloud Firestore and <strong>visible to other players</strong>: your player name, avatar and avatar frame, how many daily races you have won, your solve time on each day's daily puzzle, your score in each day's race, and when they were set, all linked to your player ID.</p>
+<p><em>Legal basis:</em> performing the service you use (GDPR Art. 6(1)(b)). Entries are removed when you delete your account, or on request.</p>
+
+<h3>Sign in with Google and cloud save (optional)</h3>
+<p>If you sign in with Google (Settings → Account), Google shares your name, email address and Google account ID with the game through Firebase Authentication, and your player account is tied to your Google account. Your saved game (levels finished, coins, power-ups, daily streak, race history, player name, avatar and frames, and items bought with coins) is then stored in Google Cloud Firestore under your account, so you can continue on another phone. Only you can read it. Your purchases are tied to your player ID at RevenueCat, so they follow your account.</p>
+<p><em>Legal basis:</em> performing the service you asked for (GDPR Art. 6(1)(b)). Signing out leaves the cloud save in your account; deleting your account removes it.</p>
 
 <h3>Usage statistics and crash reports: Google Analytics for Firebase, Firebase Crashlytics</h3>
 <p><strong>Only with your consent.</strong> If you agree, the game sends gameplay events (for example a level started or finished, time taken, power-ups used, ads watched, purchases started), an app instance identifier, device and app information and approximate location (country, derived from the IP address). If the game crashes, a crash report with technical details is sent. We use this to fix bugs and balance difficulty. We do not use it to identify you.</p>
@@ -38,7 +50,7 @@
 <p>More: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>.</p>
 
 <h3>In-app purchases: RevenueCat, Google Play, Apple App Store</h3>
-<p>Purchases (Remove Ads, the starter bundle, coin packs) are paid through Google Play or the App Store; we never see your payment details. RevenueCat, Inc. receives the purchase receipt, product, price, country and an anonymous app user identifier, so the game can check and restore your purchases.</p>
+<p>Purchases (Remove Ads, the starter bundle, coin packs) are paid through Google Play or the App Store; we never see your payment details. RevenueCat, Inc. receives the purchase receipt, product, price, country and an app user identifier (anonymous, or your player ID if you signed in with Google), so the game can check and restore your purchases.</p>
 <p><em>Legal basis:</em> performing the purchase contract (GDPR Art. 6(1)(b)).</p>
 
 <h3>Support emails</h3>
@@ -46,6 +58,8 @@
 
 <h2>Your choices</h2>
 <ul>
+<li><strong>Delete your account:</strong> in the game, <em>Settings → Account → Delete account</em>. This deletes your account, your cloud save and your leaderboard entries. Without the game, see <a href="delete-account.html">Delete your account</a>.</li>
+<li><strong>Your player name:</strong> change it at any time from your profile (the avatar on the home screen).</li>
 <li><strong>Consent for analytics and personalised ads:</strong> change it at any time in the game under <em>Settings → About → Privacy choices</em> (shown where the consent form applies).</li>
 <li><strong>Advertising identifier:</strong> reset or delete it in your phone's settings (Android: Settings → Google → Ads, or Privacy → Ads; iOS: Settings → Privacy &amp; Security → Tracking).</li>
 <li><strong>Daily reminder:</strong> turn it off in <em>Settings → Daily reminder</em>, or block notifications for the game in your phone's settings.</li>
@@ -53,11 +67,11 @@
 </ul>
 
 <h2>Your rights</h2>
-<p>Under the GDPR you have the right to access, correct and delete your data, to restrict or object to its processing, to data portability, and to withdraw consent at any time without affecting what was done before. Most data is linked only to random identifiers on your device, not to your name, so please tell us what you are asking about and, where possible, the identifier shown by the service. Write to <a href="mailto:hello@luisscripcaru.com">hello@luisscripcaru.com</a>.</p>
+<p>Under the GDPR you have the right to access, correct and delete your data, to restrict or object to its processing, to data portability, and to withdraw consent at any time without affecting what was done before. Most data is linked only to random identifiers, not to your name, so please tell us what you are asking about: your player name, or the email of the Google account you signed in with. Write to <a href="mailto:hello@luisscripcaru.com">hello@luisscripcaru.com</a>.</p>
 <p>You can also complain to a data protection authority. In Romania this is the <a href="https://www.dataprotection.ro/">National Supervisory Authority for Personal Data Processing (ANSPDCP)</a>.</p>
 
 <h2>How long data is kept</h2>
-<p>Data on your device stays until you uninstall the game. Analytics data is kept for up to 14 months; crash reports for up to 90 days. Advertising and purchase data are kept by Google, Apple and RevenueCat under their own retention rules.</p>
+<p>Data on your device stays until you uninstall the game. Your account, cloud save and leaderboard entries stay until you delete your account or ask us to remove them; when you delete your account they are removed straight away (backups of Google's systems are overwritten within about 30 days). Analytics data is kept for up to 14 months; crash reports for up to 90 days. Advertising and purchase data are kept by Google, Apple and RevenueCat under their own retention rules.</p>
 
 <h2>Transfers outside the EEA</h2>
 <p>Google and RevenueCat may process data in the United States and other countries. These transfers rely on the EU–US Data Privacy Framework and/or the European Commission's Standard Contractual Clauses.</p>
@@ -69,7 +83,7 @@
 <p>Data sent by the game travels over encrypted connections (HTTPS). Downloaded levels are checked against a published list of checksums, so changed files are rejected.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, we will update this page and its effective date. Important changes (for example, adding accounts or cloud saves) will also be announced in the game.</p>
+<p>If this policy changes, we will update this page and its effective date. Important changes will also be announced in the game.</p>
 
 <h2>Service providers' policies</h2>
 <ul>
